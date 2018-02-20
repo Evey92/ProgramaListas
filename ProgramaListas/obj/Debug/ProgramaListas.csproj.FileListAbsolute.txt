@@ -1,0 +1,9 @@
+C:\Users\Alumno14\Documents\ProgramaListas\ProgramaListas\bin\Debug\ProgramaListas.exe.config
+C:\Users\Alumno14\Documents\ProgramaListas\ProgramaListas\bin\Debug\ProgramaListas.exe
+C:\Users\Alumno14\Documents\ProgramaListas\ProgramaListas\bin\Debug\ProgramaListas.pdb
+C:\Users\Alumno14\Documents\ProgramaListas\ProgramaListas\obj\Debug\ProgramaListas.Form1.resources
+C:\Users\Alumno14\Documents\ProgramaListas\ProgramaListas\obj\Debug\ProgramaListas.Properties.Resources.resources
+C:\Users\Alumno14\Documents\ProgramaListas\ProgramaListas\obj\Debug\ProgramaListas.csproj.GenerateResource.Cache
+C:\Users\Alumno14\Documents\ProgramaListas\ProgramaListas\obj\Debug\ProgramaListas.csproj.CoreCompileInputs.cache
+C:\Users\Alumno14\Documents\ProgramaListas\ProgramaListas\obj\Debug\ProgramaListas.exe
+C:\Users\Alumno14\Documents\ProgramaListas\ProgramaListas\obj\Debug\ProgramaListas.pdb

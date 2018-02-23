@@ -14,6 +14,7 @@ namespace ProgramaListas
         [STAThread]
         static void Main()
         {
+            ConstructorEquipos TeamBuilder;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

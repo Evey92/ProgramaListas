@@ -11,7 +11,8 @@ namespace ProgramaListas
     {
         public List<Equipo> Equipos = new List<Equipo>();
         public List<string> Nombres = new List<string>();
-        public Equipo tempEquipo = new Equipo();
+        //public Equipo tempEquipo = new Equipo();
+
 
         public ConstructorEquipos()
         {
@@ -32,24 +33,30 @@ namespace ProgramaListas
         {
            
             Random r = new Random();
-            int index = r.Next(Nombres.Count);
+            int index;
 
             for (int i = 0; i < numEquipos; i++)
             {
-                for (int j = 0; j < tamano; j++)
-                    tempEquipo.integrantes[j] = Nombres[index];
-
+                Equipo tempEquipo = new Equipo();
+                if (Nombres.Count >= 0)
+                {                    
+                    for (int j = 0; j < tamano; j++)
+                    {                        
+                        index = r.Next(0, Nombres.Count);
+                        tempEquipo.integrantes.Add(Nombres[index]);
+                        Nombres.RemoveAt(index);
+                    }
+                }
 
                 Equipos.Add(tempEquipo);
             }
+            //MessageBox.Show("Equipos: " + numEquipos + " Tamaño del los equipos: " + tamano);
         }
 
-        public void mostrarEquipos(ListBox listbox, int numEquipos)
+        public void mostrarEquipos(ListBox listbox, int numEquipos, int tamano)
         {
             for (int i = 0; i < numEquipos; i++)
-                Equipos[i].mostrarIntegrantes(listbox);
-
-
+                Equipos[i].mostrarIntegrantes(listbox, tamano);
         }
 
 

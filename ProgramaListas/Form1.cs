@@ -33,7 +33,7 @@ namespace ProgramaListas
             {
                 
                 nombre = line;
-                MessageBox.Show(line);
+                //MessageBox.Show(line);
                 teamBuilder.leerTextBox(nombre);
             }
         }
@@ -45,7 +45,12 @@ namespace ProgramaListas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            listBox1.DataSource = teamBuilder.Nombres;
+            for(int i = 0; i < teamBuilder.Nombres.Count; i++)
+            {
+                listBox1.Items.Add(teamBuilder.Nombres[i]);
+                //listBox2.Items.Add(teamBuilder.Nombres[i]);
+            }
+            //listBox1.DataSource = teamBuilder.Nombres;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -62,25 +67,30 @@ namespace ProgramaListas
 
         private void button5_Click(object sender, EventArgs e)
         {
-            int tamano, numEquipos;
+            int tamano = 2, numEquipos = 2;
 
             if (!string.IsNullOrWhiteSpace(textBox2.Text))
             {
                 tamano = Convert.ToInt32(textBox2.Text);
                 numEquipos = Convert.ToInt32(textBox3.Text);
             }
-            else
-            {
-                tamano = 2;
-                numEquipos = 2;
-            }
 
             teamBuilder.formarEquipos(tamano, numEquipos);
 
-            teamBuilder.mostrarEquipos(listBox1, numEquipos);
+            teamBuilder.mostrarEquipos(listBox1, numEquipos, tamano);
+
+            for (int i = 0; i < teamBuilder.Nombres.Count; i++)
+            {
+                //listBox2.Items.Add(teamBuilder.Nombres[i]);
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -60,9 +60,9 @@ namespace ProgramaListas
             label2.Visible = true;
             textBox3.Visible = true;
             button5.Visible = true;
+            listBox1.Visible = true;
             
             //int tamano = 0;
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -91,6 +91,11 @@ namespace ProgramaListas
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

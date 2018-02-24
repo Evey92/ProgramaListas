@@ -47,9 +47,10 @@ namespace ProgramaListas
                         Nombres.RemoveAt(index);
                     }
                 }
-
+        
                 Equipos.Add(tempEquipo);
             }
+            
             //MessageBox.Show("Equipos: " + numEquipos + " Tamaño del los equipos: " + tamano);
         }
 
